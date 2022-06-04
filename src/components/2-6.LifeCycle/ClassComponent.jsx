@@ -6,7 +6,7 @@ export default class ClassComponent extends Component {
         super(props);
         console.log('constructor');
         this.state = {date: new Date()};
-        // 에로우펑션을 활용하면 바인딩안해줘도됨
+        // 에로우펑션을 활용하면 바인딩안해줘도됨!
         // this.handleClick = this.handleClick.bind(this);
     }
 
