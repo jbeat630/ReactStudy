@@ -1,5 +1,7 @@
 import './App.css';
-import State from './components/selfStudy/State';
+import State from './components/3-3.Hooks/State';
+import Reducer from './components/3-3.Hooks/Reducer';
+// import State from './components/selfStudy/State';
 // import ControlledComponent2 from './components/2-10.Form/ControlledComponent2';
 // import ControlledComponent from './components/2-10.Form/ControlledComponent';
 // import UncontrolledComponent from './components/2-10.Form/UncontrolledComponent';
@@ -14,7 +16,9 @@ import State from './components/selfStudy/State';
 function App() {
   return (
     <div className="App">
+      <Reducer />
       <State />
+      {/* <State /> */}
       {/* <ControlledComponent2 /> */}
       {/* <UncontrolledComponent /> */}
       {/* <ControlledComponent /> */}
