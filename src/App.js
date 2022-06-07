@@ -1,5 +1,6 @@
 import './App.css';
-import ControlledComponent2 from './components/2-10.Form/ControlledComponent2';
+import State from './components/selfStudy/State';
+// import ControlledComponent2 from './components/2-10.Form/ControlledComponent2';
 // import ControlledComponent from './components/2-10.Form/ControlledComponent';
 // import UncontrolledComponent from './components/2-10.Form/UncontrolledComponent';
 // import List from './components/2-9.List/List';
@@ -13,7 +14,8 @@ import ControlledComponent2 from './components/2-10.Form/ControlledComponent2';
 function App() {
   return (
     <div className="App">
-      <ControlledComponent2 />
+      <State />
+      {/* <ControlledComponent2 /> */}
       {/* <UncontrolledComponent /> */}
       {/* <ControlledComponent /> */}
       {/* <List /> */}
