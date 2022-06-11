@@ -32,3 +32,9 @@
 
  # 네이킹메이스종류
  https://kmhan.tistory.com/423
+
+ # argument와 parameter 차이점
+ http://taewan.kim/tip/argument_parameter/
+
+ # Component 와 Props 설명 react 공식문서
+ https://ko.reactjs.org/docs/components-and-props.html
