@@ -1,0 +1,28 @@
+# git flow 간략한요약설명
+
+1. git status
+ - 현재 상태확인하기
+2. git pull origin master
+ - 리모트저장소에 마스터브랜치에서 풀받기 뒤에 마스터대신 다른브랜치명입력할수있음 *작업전엔 항상 풀을 받고시작하자 그래야 컴플릿이 안남 ex) git pull origin develop
+3. git add .
+ - 변경된 목록 전체 스테이징에 더하기 (뒤에 개별적으로 변경된 파일명입력가능) ex) git add App.js
+4. git commit -m 'message'
+ - 스테이징에 더해진 변경사항을 커밋하기 커밋메세지로 간략한설명추가 (코드변경이력남기기)
+5. git push origin master
+ - 리모트저장소에 커밋된 내역 덮어쓰기 (commit한곳에 푸쉬해야됨)
+6. git log
+ - 커밋내역 볼수있음
+7. git branch ''
+ - 새로운 브랜치 생성 (로컬에 생성임 커밋하고 푸쉬하면 리모트저장소에없는 브랜치면 리모트저장소에도 생김)
+8. git checkout ''
+ - 브랜치 이동(생성되어있는 브랜치로) ex) git checkout develop 디벨롭브랜치로이동한다는뜻  
+9. git init
+ - 저장소 생성(초기화) initialize 약자임
+10. git stash
+ - 마무리되지않은 작업을 잠시 커밋하지않고 보관 이러면 작업중간에 스태쉬 하고 다른작업일하고 와서 스태쉬에보관되어잇는 작업내역을 다시불러와서 재작업가능 
+11. git stash list
+ - 스태시에 보관되어있는 목록을 볼수있음 ex) stash@{0} 어쩌고저쩌고~~ stash@{1} 어쩌고저쩌고1~~
+12. git stash apply
+ - 스태쉬에 보관되어있는거 가져오기 ex) git stash apply stash@{1}
+13. git stash apply --index
+ - 뒤에 추가된 인덱스명령어붙이면 스테이지 상태까지가져와짐 add 된상태를말함
