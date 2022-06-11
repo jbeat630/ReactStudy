@@ -38,3 +38,8 @@
 
  # Component 와 Props 설명 react 공식문서
  https://ko.reactjs.org/docs/components-and-props.html
+
+ # 리액트설치후 깃 연동하기
+ https://velog.io/@soyeon9819/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9React-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1-%EA%B9%83-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0
+ 
+ https://codingbroker.tistory.com/4
