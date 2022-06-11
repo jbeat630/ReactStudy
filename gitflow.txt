@@ -26,3 +26,9 @@
  - 스태쉬에 보관되어있는거 가져오기 ex) git stash apply stash@{1}
 13. git stash apply --index
  - 뒤에 추가된 인덱스명령어붙이면 스테이지 상태까지가져와짐 add 된상태를말함
+
+ # 코드작성타입
+ https://jeonghakhur.gitbooks.io/frontend-coding-convention/content/javascript/
+
+ # 네이킹메이스종류
+ https://kmhan.tistory.com/423

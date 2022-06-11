@@ -1,14 +1,13 @@
 import './App.css';
 import './common/style.css';
-// import { Ref } from './components/selfStudy/Ref';
-import State from './components/selfStudy/State';
+import Cleanup from './components/selfStudy/Cleanup';
 
 function App() {
 
   return (
     <div className="App">
       
-      <State />
+      <Cleanup />
 
     </div>
   );
