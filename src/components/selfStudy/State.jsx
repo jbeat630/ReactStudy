@@ -4,7 +4,7 @@ const heavyWork = () => {
     console.log('엄청 무거운 작업!!');
     return ["홍길동", "김민수"];
 }
-
+ 
 export default function State() {
 
     const  [time , setTime ] = useState(1);
