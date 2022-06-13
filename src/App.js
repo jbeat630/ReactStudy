@@ -1,13 +1,13 @@
 import './App.css';
 import './common/style.css';
-import Cleanup from './components/selfStudy/Cleanup';
+import Reducer2 from './components/selfStudy/Reducer2';
 
 function App() {
 
   return (
     <div className="App">
       
-      <Cleanup />
+      <Reducer2 />
 
     </div>
   );
