@@ -1,13 +1,11 @@
 import './App.css';
 import './common/style.css';
-import {Ref2} from './components/selfStudy/Ref2'
-
+import Page from './components/selfStudy/useContext/Page';
 function App() {
-
+  
   return (
     <div className="App">
-      
-      <Ref2 />
+        <Page />
     </div>
   );
 }

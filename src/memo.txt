@@ -2,7 +2,7 @@ useEffect --> 데이터 fetch / 구독 / Dom 수정
 clean up --> 구독과 구독해지를 한 공간에서
 dependency array --> 필요한 변경시에만 effect 실행
 
-*useEffect(공식문서설명)
+====================useEffect(공식문서설명)====================
 렌더링 이후에 어떤 일을 수행해야하는 지를 말합니다.
 React는 우리가 넘긴 함수를 기억했다가(이 함수를 ‘effect’라고 부릅니다) 
 정리(clean-up)를 이용하는 Effect
@@ -20,7 +20,7 @@ return () => {//내용}
     첫번째인자로 콜백 두번째인자로 디펜더시 어레이
     처음렌더링될때실행 후 배열안에 요소의 값이 바뀔때마다 실행
 
-*useRef
+====================useRef====================
 변화는감지하지만 그변화로 렌더링을 발생시키면안될때 사용
 const ref = useRef(value) {current: value}로 반환함
 컴포넌트가 계속해서 렌더링이되어도 컴포넌트가 언마운트되기전까지 값을유지됨
@@ -33,3 +33,33 @@ Ref의변화 -> 렌더링 안됨 -> 변수들이 유지됨 (불필요한렌더�
 
 유즈레프를통해서 돔요소에 접근할수있음
  ex) 로그인창을열었을때 아이디입력인풋에 포커스가 바로되게끔할수있음 ref2파일임
+
+====================useReducer====================
+복잡한 스테이트를 다룰때 좋음 유지보수에도 좋음
+Reducer Dispatch Action 이 3가지로 되어있음
+1.Reducer -> state를 업데이트해주는역할
+2.Dispatch -> 요구하는것
+3.Action -> 뭘요구하는지 담은거를 Reducer에 전달함
+
+ec) Dispatch(스테이트를업데이트하고싶음) -> Action(어떻게 어떤것을 바꾸겠다) -> Reducer(ok 내가 바꿔줌)
+디스패치를 리듀서에보냄 디스패치안에 액션이담겨져있음 (액션은요구사항) 리듀서가 받고 액션내용대로 스테이트를 업데이트해줌
+Dispatch( Action ) -> Reducer( State, Action )
+리듀서는 이때 첫번째 인자 스테이트(현재꺼)에서 두번째인자 액션내용대로 스테이트를 바꿔줌 
+
+====================useContext====================
+컨텍스트를 사용하면 props로 일일히 데이터를 전달해주지않아도 하위컨포넌트에게 전역적인 데이터를 사용가능하게해줄수있음
+유즈컨텍스트 사용하면 컴포넌트를 재사용하기에 어려워질수있음
+Prop drilling을 피하기위한 목적이라면 Component Composition(컴포넌트합성)을 먼저고려해야됨
+ex) ThemeContext파일을 만들어서
+import { createContext } from "react";
+export const ThemeContext = createContext(null);
+로 크리에이트컨텍스트 불러오고 예제에 씸컨텍스트 초기값을 선언해준다 없으면 걍 null로줘두됨
+
+상위 컴포넌트로가서 아래 만들어둔 컨텍스트.프로바이더 로 감싸고 밸류값으로 자식컴포넌트들이 사용할수있는 데이터를 전달해주면됨
+const [스테이트, 셋스테이트] = useState(초기값);
+<ThemeContext.Provider value={ 전달할 데이터(스테이트) }>
+    자식컴포넌트
+</ThemeContext.Provider>
+자식 컴포넌트에선
+import { ThemeContext } from './context/ThemeContext'; 로 불러오고
+const {사용할 데이터(스테이트)} = useContext(ThemeContext);로 사용할 데이터를 유즈컨텍스트(만들어둔컨텍스트)로 받아서 그냥 쓸수있음 
