@@ -1,0 +1,3 @@
+useEffect --> 데이터 fetch / 구독 / Dom 수정
+clean up --> 구독과 구독해지를 한 공간에서
+dependency array --> 필요한 변경시에만 effect 실행

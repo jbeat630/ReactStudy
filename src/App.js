@@ -1,14 +1,13 @@
 import './App.css';
 import './common/style.css';
-import Reducer2 from './components/selfStudy/Reducer2';
+import Dialog from './components/3-6.Composition2/Dialog'
 
 function App() {
 
   return (
     <div className="App">
       
-      <Reducer2 />
-
+      <Dialog />
     </div>
   );
 }
