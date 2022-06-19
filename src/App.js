@@ -1,11 +1,11 @@
 import './App.css';
 import './common/style.css';
-import Page from './components/selfStudy/useContext/Page';
+import ThankyouDialog from './components/3-6.Composition2/ThankyouDialog';
 function App() {
   
   return (
     <div className="App">
-        <Page />
+        <ThankyouDialog />
     </div>
   );
 }
