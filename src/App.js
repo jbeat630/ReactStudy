@@ -1,13 +1,13 @@
 import './App.css';
 import './common/style.css';
-import Dialog from './components/3-6.Composition2/Dialog'
+import {Ref2} from './components/selfStudy/Ref2'
 
 function App() {
 
   return (
     <div className="App">
       
-      <Dialog />
+      <Ref2 />
     </div>
   );
 }
