@@ -19,8 +19,9 @@ export default function Dialog(props) {
             backgroundColor: "white",
           }}
         >
-          <p>Hellow, World</p>
-          <button onClick={ () => setIsOpen(false) }>Close</button>
+          { typeof props.title === "string" ? (<h1>{props.title}</h1>) : (props.title)}
+          { typeof props.description === "string" ? (<h5>{props.description}</h5>) : (props.description)}
+          { typeof props.button === "string" ? (<button style={{backgroundColor:"red",color:"white"}} onClick={ () => setIsOpen(false) }>{props.button}</button>) : (<div onClick={ () => setIsOpen(false) }>{props.button}</div>)}
         </div>
       }
       {
