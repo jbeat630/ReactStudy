@@ -6,7 +6,7 @@ export default function FunctionalComponent() {
         setDate(new Date());
     }
 
-
+    //공부
     // 빈배열주면 마운트되자마자 호출
     useEffect( () => {
         const interval = setInterval(() => tick(), 1000);
