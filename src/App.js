@@ -1,11 +1,12 @@
 import './App.css';
 import './common/style.css';
-import ThankyouDialog from './components/3-6.Composition2/ThankyouDialog';
+import StateStudy from './components/selfStudy/StateStudy';
+
 function App() {
   
   return (
     <div className="App">
-        <ThankyouDialog />
+      <StateStudy />
     </div>
   );
 }
