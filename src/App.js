@@ -1,13 +1,13 @@
 import './App.css';
 import './common/style.css';
-import Reducer2 from './components/selfStudy/Reducer2';
+import StateStudy from './components/selfStudy/StateStudy';
 
 function App() {
 
   return (
     <div className="App">
       
-      <Reducer2 />
+      <StateStudy />
 
     </div>
   );

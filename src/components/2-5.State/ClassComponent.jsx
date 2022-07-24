@@ -13,7 +13,7 @@ export default class ClassComponent extends Component {
             1000
         );
     }
-    // 사라지기전에 호출될얘z
+    // 사라지기전에 호출될얘
     // 언마운트는 사라지는놈
     componentWillUnmount() {
         clearInterval(this.timerID);
